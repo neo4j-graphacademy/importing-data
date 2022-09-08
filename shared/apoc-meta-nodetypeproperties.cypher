@@ -1,1 +1,2 @@
-CALL apoc.meta.nodeTypeProperties( )  YIELD nodeType, propertyName, propertyTypes
+CALL apoc.meta.nodeTypeProperties()
+YIELD nodeType, propertyName, propertyTypes
