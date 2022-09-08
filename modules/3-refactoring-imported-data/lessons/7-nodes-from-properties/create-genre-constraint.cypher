@@ -1,0 +1,1 @@
+CREATE CONSTRAINT Genre_name ON (g:Genre) ASSERT g.name IS UNIQUE
