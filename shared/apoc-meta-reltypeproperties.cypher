@@ -1,2 +1,2 @@
 CALL apoc.meta.relTypeProperties()
-YIELD relype, propertyName, propertyTypes
+YIELD relType, propertyName, propertyTypes
