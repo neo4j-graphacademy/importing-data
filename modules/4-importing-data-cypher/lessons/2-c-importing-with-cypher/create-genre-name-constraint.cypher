@@ -1,3 +1,3 @@
 CREATE CONSTRAINT Genre_name IF NOT EXISTS
-ON (x:Genre)
+FOR (x:Genre)
 REQUIRE x.name IS UNIQUE
