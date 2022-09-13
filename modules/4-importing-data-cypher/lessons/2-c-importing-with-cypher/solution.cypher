@@ -1,4 +1,7 @@
 // clear the graph
+MATCH (u:User) DETACH DELETE u;
+MATCH (p:Person) DETACH DELETE p;
+MATCH (m:Movie) DETACH DELETE m;
 MATCH (n) DETACH DELETE n;
 // make sure all constraints exist
 CREATE CONSTRAINT Genre_name IF NOT EXISTS ON (x:Genre) ASSERT x.name IS UNIQUE;
