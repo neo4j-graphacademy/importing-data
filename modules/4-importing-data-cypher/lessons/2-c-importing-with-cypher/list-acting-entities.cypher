@@ -3,7 +3,7 @@ FROM 'https://data.neo4j.com/importing/2-movieData.csv'
 AS row
 WITH row WHERE row.Entity = "Join" AND row.Work = "Acting"
 RETURN
-row.tmdbId,
-row.movieId,
+toInteger(row.tmdbId),
+toInteger(row.movieId),
 row.role
 LIMIT 10

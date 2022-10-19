@@ -4,8 +4,9 @@ AS row
 //process only Movie rows
 WITH row WHERE row.Entity = "Movie"
 RETURN
-row.tmdbId,
-row.imdbId,
+toInteger(row.tmdbId),
+toInteger(row.imdbId),
+toInteger(row.movieId),
 toFloat(row.imdbRating),
 row.released,
 row.title,

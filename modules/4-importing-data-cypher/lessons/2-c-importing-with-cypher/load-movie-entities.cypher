@@ -8,7 +8,7 @@ ON CREATE SET
 m.tmdbId = toInteger(row.tmdbId),
 m.imdbId = toInteger(row.imdbId),
 m.imdbRating = toFloat(row.imdbRating),
-m.released = row.released,
+m.released = datetime(row.released),
 m.title = row.title,
 m.year = toInteger(row.year),
 m.poster = row.poster,
